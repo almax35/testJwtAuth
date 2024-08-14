@@ -27,7 +27,6 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 
     private final JwtTokenManager jwtTokenManager;
 
-    @SuppressWarnings("checkstyle:ReturnCount")
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String authorization = request.getHeader(AUTHORIZATION);

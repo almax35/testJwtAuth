@@ -1,12 +1,10 @@
 package alekseev.test.taskmanagement.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
-public class JwtRequest {
+public class UserRegistrationDto {
     private String login;
     private String password;
-
+    private String verifyPassword;
 }

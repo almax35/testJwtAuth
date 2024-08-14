@@ -8,12 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/main")
 public class MainController {
    @GetMapping("/security")
-    public String sayHello(){
+    public String getSecurityPage(){
         return "security page";
     }
     @GetMapping("/unsecurity")
-    public String sayBuy(){
+    public String getUnsecurityPage(){
         return "unsecurity page";
+    }
+
+    @GetMapping("/admin")
+    public String getAdminPage(){
+        return "admin page";
     }
 
 }
